@@ -7,13 +7,6 @@
 #    ===> Assign Date : 
 #
 */
-/* 
-  ## Full abbrebiation of short code
-
-  >> dhf = default-head-font
-  >> dpf = default-para-font
-  >> wlc-msg = Welcome Message
-*/
 /* Custom Fonts are addded here */
 @font-face {
   src: url(../font/Inconsolata-VariableFont_wdth\,wght.ttf);
@@ -59,45 +52,4 @@ a {
   font-family: dpf;
 }
 
-/*Default CSS End*/
-/* Welcome Banner text Css  */
-.wlc-msg {
-  /* text-align: center; */
-  background: #0f0c29;
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 120px;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.wlc-msg h1 {
-  letter-spacing: 2px;
-  font-size: 42px;
-  text-align: center;
-}
-
-.wlc-msg p {
-  font-size: 32px;
-  text-align: center;
-}
-
-.wlc-msg h3 span {
-  font-size: 40px;
-}
-
-.wlc-msg ul li ul li {
-  margin-left: 20px;
-}
-
-.wlc-msg ul li span {
-  font-size: 20px;
-  font-weight: bold;
-  border-bottom: 1px solid #fff;
-  margin-top: 5px;
-}
-
-.wlc-msg ul li ul li i {
-  font-size: 16px;
-}/*# sourceMappingURL=style.css.map */
+/*Default CSS End*//*# sourceMappingURL=style.css.map */
