@@ -1,0 +1,11 @@
+// Banner Buttons
+@mixin bnr__btn {
+    width: 166px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: var(--roboto-font);
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
