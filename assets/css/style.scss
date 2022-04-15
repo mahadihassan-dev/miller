@@ -324,6 +324,16 @@ ol {
             font-weight: 600;
             color: $color-secondary;
             text-transform: uppercase;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 8px;
+                right: -25px;
+                width: 20px;
+                height: 3px;
+                background: $color-primary;
+            }
         }
         .about_main_title {
             font-family: var(--roboto-font);
@@ -348,6 +358,11 @@ ol {
     ;
 }
 
+.about_card_body:hover::after {
+    // visibility: show;
+    opacity: 1;
+}
+
 .about_card_body {
     background: #fff;
     box-shadow: 0px 0px 25px -15px #00001054;
@@ -356,6 +371,19 @@ ol {
         bottom: 20px;
     }
     ;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $color-secondary;
+        // visibility: hidden;
+        opacity: 0;
+        transition: all linear .3s;
+    }
     .about_card_title {
         font-family: var(--roboto-font);
         font-weight: 700;
@@ -379,3 +407,136 @@ ol {
 
 
 /* ==== About Section : End ==== */
+
+
+/* ==== Our Service Section : Start ==== */
+
+.service_wrapper {
+    background: #f3f3f3;
+}
+
+.service_sub_title {
+    color: $color-secondary;
+    font-family: var(--roboto-font);
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 8px;
+        right: -25px;
+        width: 20px;
+        height: 3px;
+        background: $color-primary;
+    }
+}
+
+.service_title_primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: -5px;
+        left: 0;
+        border-top: 1px solid #76808f24;
+        width: 95%;
+    }
+    .service_primary_title_col-40 {
+        width: 32%;
+        .service_main_title {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $color-primary;
+            font-family: var(--roboto-font);
+        }
+    }
+    .service_primary_title_col-60 {
+        width: 68%;
+        .service_main_desc {
+            font-size: 18px;
+            font-family: var(--roboto-font);
+            font-weight: 400;
+            color: $color-fourth;
+        }
+    }
+}
+
+.service_card_slide_body {
+    background: #fff;
+    width: 420px;
+    margin: auto;
+    padding: {
+        top: 40px;
+        left: 35px;
+        bottom: 40px;
+        right: 35px;
+    }
+    ;
+    position: relative;
+    .service_card_details {
+        span.sevice_card_subtitle {
+            color: $color-fourth;
+            font-family: var(--roboto-font);
+            font-weight: 400;
+            margin-bottom: 8px;
+            margin-top: 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+        h3.service_card_title {
+            color: $color-primary;
+            font-size: 22px;
+            font-family: var(--roboto-font);
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        p.service_card_desc {
+            font-family: var(--roboto-font);
+            font-weight: 400;
+            font-size: 16px;
+            color: $color-fourth;
+        }
+        a.service_card_btn_link {
+            font-family: var(--roboto-font);
+            font-size: 18px;
+            font-weight: 600;
+            color: $color-primary;
+            i {
+                font-size: 14px;
+                margin: {
+                    left: 4px;
+                }
+                ;
+            }
+        }
+    }
+    span.service_card_counter_number {
+        position: absolute;
+        top: -45px;
+        right: 10px;
+        font-family: var(--roboto-font);
+        font-weight: 600;
+        font-size: 160px;
+        color: transparent;
+        -webkit-text-stroke: 1px #77777730;
+    }
+}
+
+.service_card_slide_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* ==== Our Service Section : End ==== */
